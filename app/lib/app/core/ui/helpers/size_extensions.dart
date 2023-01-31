@@ -6,7 +6,7 @@ extension SizeExtensions on BuildContext {
   double get screnHeight => MediaQuery.of(this).size.height;
 
 
-  double percentWidht(double percent) =>MediaQuery.of(this).size.width * percent;
+  double percentWidth(double percent) =>MediaQuery.of(this).size.width * percent;
   double percemtHeight(double percent) =>MediaQuery.of(this).size.height * percent;
 
 
