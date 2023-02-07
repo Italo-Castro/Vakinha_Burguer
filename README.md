@@ -1,10 +1,11 @@
-#Vakinha_Burguer
+# Vakinha_Burguer
 
-Este projeto foi desenvolvido durante a 9º edição do DART WEEK em janeiro de 2023, evento de lançamento da academia do FLUTTER. 
+Este projeto foi desenvolvido durante a 9º edição do DART WEEK em janeiro de 2023, evento de lançamento da Academia do Flutter, ministrado pelo grande professor Rodrigo Rahman. 
+
 O objetivo do projeto foi desenvolver um aplicativo de delivery.
 
 
-#Packages utilizados:
+# Packages utilizados:
 
 * ### flutter_dotenv
 
