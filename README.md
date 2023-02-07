@@ -52,7 +52,17 @@ Este pacote foi utilizado apenas uma vez, mas facilica a renderização de algun
 ________________________________________________________________________________________________
 
 # Projeto desenvolvido ...
-![img.png](img.png) 
+Tela Inicial
+<img src="https://user-images.githubusercontent.com/72866245/217215306-3876b512-e30d-4276-9899-580ad416ea5a.png" width='275px'/>
+
+Tela de listagem dos produtos
+<img src="https://user-images.githubusercontent.com/72866245/217216284-79ba2c5c-598c-4035-959d-e00fe3c7f8f8.png" width='275px'/>
+
+Tela de listagem dos produtos com produtos já adicinados a sacola
+<img src="https://user-images.githubusercontent.com/72866245/217216025-8cb617ff-fdde-47da-b0ed-6dd2490321f0.png" width='275px'/>
+
+
+
 ![img_1.png](img_1.png)
 ![img_2.png](img_2.png)
 ![img_3.png](img_3.png)
