@@ -1,5 +1,10 @@
 import 'package:delivery_app/app/core/ui/theme/theme_config.dart';
+import 'package:delivery_app/app/pages/auth/login/login_router.dart';
 import 'package:delivery_app/app/pages/home/home_router.dart';
+import 'package:delivery_app/app/pages/order/orde_router.dart';
+import 'package:delivery_app/app/pages/order/order_page.dart';
+import 'package:delivery_app/app/pages/product_detail/product_detail_router.dart';
+import 'package:delivery_app/app/pages/register/register_router.dart';
 import 'package:delivery_app/app/pages/splash/splash_page.dart';
 import 'package:flutter/material.dart';
 
@@ -15,8 +20,12 @@ class Dw9DeliveryApp extends StatelessWidget {
         title: 'Delivery App',
         theme: ThemeConfig.theme,
         routes: {
-          '/': (context) => SplashPage(),
+          '/': (context) => const SplashPage(),
           '/home': (context) => HomeRouter.page,
+          '/productDetail': (context) => ProductDetailRouter.page,
+          '/auth/login': (context) => LoginRouter.page,
+          '/auth/register': (context) => RegisterRouter.page,
+          '/order': (context) => OrderRouter.page,
         },
       ),
     );

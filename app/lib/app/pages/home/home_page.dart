@@ -6,6 +6,7 @@ import 'package:delivery_app/app/models/product_model.dart';
 import 'package:delivery_app/app/pages/home/widgtes/delivery_product_tile.dart';
 import 'package:delivery_app/app/pages/home/widgtes/home_controller.dart';
 import 'package:delivery_app/app/pages/home/widgtes/home_state.dart';
+import 'package:delivery_app/app/pages/home/widgtes/shoppng_bag_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
@@ -46,14 +47,25 @@ class _HomePageState extends BaseState<HomePage, HomeController> {
           builder: (context, state) {
             return Column(
               children: [
+                Text(state.shoppingBag.length.toString()),
                 Expanded(
                   child: ListView.builder(
                     itemCount: state.products.length,
                     itemBuilder: (context, index) {
                       final product = state.products[index];
-                      return DeliveryProductTile(product: product);
+                      final orders = state.shoppingBag
+                          .where((element) => element.product == product);
+                      return DeliveryProductTile(
+                        product: product,
+                        orderProductDto:
+                            orders.isNotEmpty ? orders.first : null,
+                      );
                     },
                   ),
+                ),
+                Visibility(
+                  visible: state.shoppingBag.isNotEmpty,
+                  child: ShoppingBagWidget(bag: state.shoppingBag),
                 ),
               ],
             );

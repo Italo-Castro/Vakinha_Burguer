@@ -1,5 +1,4 @@
 import 'package:delivery_app/app/core/ui/helpers/size_extensions.dart';
-import 'package:delivery_app/app/core/ui/styles/colors_app.dart';
 import 'package:delivery_app/app/core/ui/widgtes/delivery_button.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +9,7 @@ class SplashPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ColoredBox(
-        color: Color(0XFF140E0E),
+        color: const Color(0XFF140E0E),
         child: Stack(
           children: [
             Align(

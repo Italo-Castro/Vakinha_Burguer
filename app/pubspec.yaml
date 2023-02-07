@@ -30,16 +30,20 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_dotenv: ^5.0.2
-  dio: ^4.0.6
-  provider: ^6.0.5
+  flutter_dotenv: ^5.0.2 #usado para manipulação de arquivo .env
+  dio: ^4.0.6 #usando para comunicação externa hhtp
+  provider: ^6.0.5 #providerzão
   intl: ^0.18.0
-  loading_animation_widget: ^1.2.0+4
-  top_snackbar_flutter: ^3.0.0+1
+  loading_animation_widget: ^1.2.0+4 #widget de loading
+  top_snackbar_flutter: ^3.0.0+1 #mensagem de snack
   bloc: ^8.1.0
   flutter_bloc: ^8.1.1 #DOIDERA
   equatable: ^2.0.5
   match: ^0.4.1
+  auto_size_text: ^3.0.0
+  shared_preferences: ^2.0.17 #Amarzenar preferencias
+  validatorless: ^1.2.3 #Trabalhar com validações de formulario
+  flutter_awesome_select: ^6.5.0 #rendereizar listas de selects
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
